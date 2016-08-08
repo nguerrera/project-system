@@ -6,8 +6,8 @@
        csproj's up-to-date check because they aren't copied to the output directory. 
        Turn it off. 
   -->
-  <Import Condition="'$(ProjectSystemLayer)' != 'Dependendency' AND '$(NonShipping)' != 'true'" Project="$(NuGetPackageRoot)\MicroBuild.Core\0.2.0\build\MicroBuild.Core.props" />
-  <Import Condition="'$(ProjectSystemLayer)' != 'Dependendency' AND '$(NonShipping)' != 'true'" Project="$(NuGetPackageRoot)\MicroBuild.Core\0.2.0\build\MicroBuild.Core.targets" />
+  <Import Condition="'$(ProjectSystemLayer)' != 'Dependency' AND '$(NonShipping)' != 'true'" Project="$(NuGetPackageRoot)\MicroBuild.Core\0.2.0\build\MicroBuild.Core.props" />
+  <Import Condition="'$(ProjectSystemLayer)' != 'Dependency' AND '$(NonShipping)' != 'true'" Project="$(NuGetPackageRoot)\MicroBuild.Core\0.2.0\build\MicroBuild.Core.targets" />
 
   <ItemDefinitionGroup Condition="'$(UseCommonOutputDirectory)' == 'true'">
     <Reference>
